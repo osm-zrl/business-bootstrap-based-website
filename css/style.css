@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*color pallete*/
+:root{
+    --color1: #F53A11;
+    --color2: #489FEF;
+    --color3: #020101;
+    --color4: #DDDCD7;
+    --color5: #F1F1F1;
+}
+header{
+    background-color: white;
+}
+#menu-btn{
+    font-size: 30px!important;
+}
+#side-menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    min-width: 300px;
+    background-color: var(--color4);
+    transition: 0.8s;
+}
+#text-1p-area{
+    max-width: 800px;
+    background-color: rgba(255, 255, 255,0.5);
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+#text-1p-area h1{
+    font-size: 50px;
+    
+
+}
+#main-1p{
+    background-image: url(../images/coffe-shop-with-wooden-walls-unfocused.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width:800px) {
+    #main-1p{
+        min-height: 70vh;
+    }
+    #main-p11{
+        min-height: fit-content;
+    }
+}
+.badge-1p{
+    display: block;
+    background-color: var(--color1);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 250px!important;
+    text-align: center;
+    color: white;
+}
+#main-2p{
+    background-color: var(--color2);
+    padding: 40px 0;
+}
+#main-2p p{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+#main-2p-formholder{
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+    margin: auto;
+}
+#main-2p-formholder form{
+    display: grid;
+    grid-template-columns: 40% 40% auto;
+    gap: 1rem;
+}
+@media screen and (max-width:768px) {
+    #main-2p-formholder form{
+        grid-template-columns: 1fr;
+    }
+}
+#main-2p-formholder form input{
+    height: 50px;
+    border: none;
+    width: 100%;
+    
+}
+#main-2p-formholder form input[type="text"],input[type="email"]{
+    background-color: #eae9e9;
+    padding: 10px;
+}
+#main-2p-formholder form input[type="submit"]{
+    background-color: var(--color1);
+    color: white;
+    padding: 0 20px;
+}
+#main-3p{
+    background-color: var(--color5);
+    color: #020101;
+    padding: 40px 0;
+}
+#main-3p h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.card-i{
+    background-color: var(--color1);
+    border-radius: 100%;
+    width: 6rem!important;
+    height: 6rem!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    margin-left: auto;
+}
+.main-p3-card{
+    background-color: white;
+    padding: 1.5rem;
+    width: 100%;
+    margin: 0!important;
+    max-width: 350px;
+}
+.card-holder{
+    padding: 15px!important;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:768px) {
+    .card-holder{
+        max-width: unset;
+    }
+    .main-p3-card{
+        max-width: unset;
+    }
+}
+#main-p4{
+    padding: 40px 0;
+}
+.main-p3-card a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-4p-card{
+    min-height: 200px;
+    width: 100%;
+    background-position: top;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+@media  screen and (max-width:768px) {
+    .main-4p-card{
+        min-height: 200px;
+        width: 100%;
+    }
+}
+.main-4p-card h4{
+    font-size: 2em;
+}
+
+.main-4p-card-i{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color1);
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--color4);
+}
+.p5-card{
+    padding: 40px;
+}
+#main-p5,#main-p6,#main-p7,#main-p10,#main-p11,#main-p9{
+    padding: 40px 0;
+}
+#main-p5 h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+footer{
+    min-height: 60px;
+    background-color: rgb(56, 56, 56);
+}
+.accordion-button::after{
+    content: "+"!important;
+    background-image: none!important;
+    font-size: 35px!important;
+    background-color: var(--color1);
+    padding: 20px;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+    border-radius: 100%;
+    color: white;
+    transform: none!important;
+}
+.accordion-button:not(.collapsed)::after{
+    transform: none!important;
+    display: flex;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+#main-p7{
+    background-color: var(--color2);
+    padding: 60px 0;
+}
+#main-p7 .container{
+    text-align: center;
+    color: white;
+
+}
+#main-p7-a{
+    background-color: var(--color1);
+    display: block;
+    color: white;
+    text-align: center;
+    max-width: fit-content;
+    text-decoration: none;
+    padding: 15px 45px;
+    margin: 0 auto;
+}
+#main-p8,#main-p9{
+    padding: 40px 0;
+    background-color: var(--color5);
+}
+.team-card{
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+}
+.team-role{
+    color: #adacac;
+}
+.team-name{
+    font-weight: bold;
+    font-size: 25px;
+}
+.team-desc{
+    color: #737373;
+}
+.team-social{
+    background-color: var(--color2);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+#main-p10{
+    background-color: var(--color5);
+}
+#main-p10 h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.main-p10-img{
+    width: 5rem!important;
+    height: 5rem!important;
+    height: auto;
+    margin: 10px;
+}
+#main-p11{
+    background-image: url(../images/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:800px) {
+    #main-p11{
+        min-height: auto;
+    }
+}
+#main-p11-box{
+    background-color: rgba(255, 255, 255,0.5);
+    margin: auto;
+    padding: 40px;
+}
